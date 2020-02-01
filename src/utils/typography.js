@@ -1,20 +1,9 @@
 import Typography from "typography"
-import grandViewTheme from "typography-theme-grand-view"
+import stowLakeTheme from "typography-theme-stow-lake"
 
-//
-// Wordpress2016.overrideThemeStyles = () => {
-//   return {
-//     "a.gatsby-resp-image-link": {
-//       boxShadow: `none`,
-//     },
-//   }
-// }
-//
-// delete Wordpress2016.googleFonts
+const typography = new Typography(stowLakeTheme);
 
-const typography = new Typography(grandViewTheme)
-
-grandViewTheme.overrideThemeStyles = () => {
+stowLakeTheme.overrideThemeStyles = () => {
   return {
     "p > img": {
       display: 'block',
