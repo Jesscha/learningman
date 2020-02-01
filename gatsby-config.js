@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Learning Man`,
     author: ``,
-    description: `잘하기 보다는 자라기`,
+    description: `잘하기보다 자라기`,
     //URL이 URL의 형태를 가지지 않으면 config.js 벨리데이션에 실패한다. 반드시 url 처럼 생긴 주소를 써야 한다.
     siteUrl: `https://learningman.co/`,
     image:"",
