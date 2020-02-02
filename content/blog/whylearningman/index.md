@@ -2,7 +2,7 @@
 title: 러닝맨을 시작하면서 
 date: "2020-02-02T06:40:32.169Z"
 description: 잘하는 법보다 자라는 법을 배워야 한다
-ogimage: './personal_development'
+ogimage: './personal_development.jpg'
 tags: ["essay"]
 ---
 
