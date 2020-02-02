@@ -46,7 +46,7 @@ class Layout extends React.Component {
                     >
                         {description}
                     </p>
-                    <Bio/>
+                    {/*<Bio/>*/}
 
                 </>
 

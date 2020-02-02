@@ -21,7 +21,6 @@ class BlogPostTemplate extends React.Component {
         };
 
 
-
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO
@@ -55,7 +54,6 @@ class BlogPostTemplate extends React.Component {
                             <div
                                 style={{
                                      marginBottom: rhythm(1),
-
                                 }}
                             >
                                 <span>tags: </span>
@@ -89,8 +87,8 @@ class BlogPostTemplate extends React.Component {
                             marginBottom: rhythm(1),
                         }}
                     />
-                    <CommentCount config={disqusConfig} placeholder={''} />
-                    <Disqus config={disqusConfig} />
+                    {/*<CommentCount config={disqusConfig} placeholder={''} />*/}
+                    {/*<Disqus config={disqusConfig} />*/}
                     <footer>
 
                     </footer>
