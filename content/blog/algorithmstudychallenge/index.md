@@ -3,7 +3,7 @@ title: 알고리즘 1도 공부안해본 개발자 1달만에 코딩테스트 �
 date: "2020-02-09T06:40:32.169Z"
 description: 알고싶다 알고리즘
 ogimage: './bruce.jpg'
-tags: ["essay", "challenge"]
+tags: ["essay", "challenge","jesse"]
 ---
 ![이소룡 이미지](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2rk/image/3Z2loqQwWrsf-9Id6IHEf60Ev9o.jpg)
 >나는 1만가지 발차기를 한번씩 한 사람을 두려워 하지 않는다. 하지만 한가지 발차기를 1만번 한 사람을 두려워 한다. 
