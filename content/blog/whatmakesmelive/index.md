@@ -1,9 +1,9 @@
 ---
-title: 왜 사나 
-date: "2020-02-02T06:40:32.169Z"
-description: 잘하는 법보다 자라는 법을 배워야 한다
+title: 사람은 무엇으로 인해 사는가 
+date: "2020-03-06T06:40:32.169Z"
+description: 아니, 나는 무엇으로 인해 사는가
 ogimage: './personal_development.jpg'
-tags: ["essay"]
+tags: ["intern kay first_article"]
 ---
 
 ## 배우는 법도 배워야 한다
