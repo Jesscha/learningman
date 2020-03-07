@@ -6,9 +6,9 @@ ogimage: './personal_development.jpg'
 tags: ["intern kay first_article"]
 ---
 
-## 배우는 법도 배워야 한다
+## Test
 
-**어떻게 나 자신을 더 성장시킬까?** 
+**Test** 
 
 **어떻게 하면 나만의 전문성을 가질 수 있을까?**
 
