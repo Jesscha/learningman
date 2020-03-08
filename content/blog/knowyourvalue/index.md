@@ -120,5 +120,7 @@ tags: ["essay", "value", "self-awareness", "eddy"]
 
 
 
+---
 
+글쓴이: 범근
 
