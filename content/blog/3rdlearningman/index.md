@@ -3,7 +3,7 @@ title: 세 번째 러닝맨
 date: "2020-03-10T23:09:02.169Z"
 description: 고난의 이유와 러닝맨을 시작한 이유
 ogimage: './noun_learning_man.png'
-tags: ["essay reasons kay"]
+tags: ["essay", "reasons", "kay"]
 ---
 
 ## 인생 역대급 고난과 그걸 버텨낸 이후의 방향성 
