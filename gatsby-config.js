@@ -12,6 +12,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-3733948010849819`
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-MTN6L7L",
