@@ -65,7 +65,7 @@ const Bio = () => {
         ,  
         <Link to={'tags/jesse'}> Jesse</Link>
         ,  
-        <Link to={'tags/kay'}> Kay</Link>
+        <Link to={'tags/kay'}> Kay </Link>
         )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접 경험한 생각만 담습니다. 멋있는 척 하지 않습니다. 여러분의 배움과 성장에 도움이 되었으면 좋겠습니다.
 
 
