@@ -60,7 +60,7 @@ const Bio = () => {
         
         
       }}> 
-      러닝맨은 배움과 성장을 다루는 미디어입니다. 배우는 인간 3명(
+      러닝맨은 당신의 배움과 성장을 도와줄 미디어입니다. 배우는 인간 3명(
         <Link to={'tags/eddy'}> Eddy</Link> 
         ,  
         <Link to={'tags/jesse'}> Jesse</Link>
