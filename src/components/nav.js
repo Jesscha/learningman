@@ -53,7 +53,7 @@ const Nav = ({tag, location}) => {
 <div className='navWrapper' ref={navRef}>
     <div className="navBox" >
         <Link id={"all"} to={'/'} >
-                all
+                All
         </Link>
     </div>
 
@@ -63,7 +63,7 @@ const Nav = ({tag, location}) => {
                 </Link>
     </div>
     <div className="navBox">
-        <Link id={'challenge'} to={'tags/challenge'}>challenge</Link>
+        <Link id={'challenge'} to={'tags/challenge'}>Challenge</Link>
     </div>
     <div className="navBox navBox-end">
          1
