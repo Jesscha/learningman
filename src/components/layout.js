@@ -2,19 +2,19 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
-import Bio from "./bio";
+import Bio from "./bio"
+import Nav from "./nav"
+
+  
+
 
 class Layout extends React.Component {
     render() {
-        const { location, title, children, description } = this.props;
-        console.log(description);
-        console.log(title);
-
-
+        const { location, title, children, description, tag } = this.props;
         const rootPath = `${__PATH_PREFIX__}/`;
         let header;
-
-        if (location && location.pathname === rootPath) {
+    
+        if ((location && location.pathname === rootPath) || tag) {
             header = (
                 <>
                     <h1
@@ -24,7 +24,6 @@ class Layout extends React.Component {
                             marginTop: 0,
                         }}
                     >
-
                         <Link
                             style={{
                                 boxShadow: `none`,
@@ -46,13 +45,15 @@ class Layout extends React.Component {
                     >
                         {description}
                     </p>
-                    {/*<Bio/>*/}
-
+                    <Bio/>
+                    <Nav tag={tag} location={location} />
+                    
                 </>
-
             )
-        } else {
+        }
+        else {
             header = (
+                <>
                 <h3
                     style={{
                         fontFamily: `Montserrat, sans-serif`,
@@ -70,6 +71,7 @@ class Layout extends React.Component {
                         {title}
                     </Link>
                 </h3>
+                </>
             )
         }
         return (

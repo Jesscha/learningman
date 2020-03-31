@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 
@@ -37,27 +38,38 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(0)
       }}
     >
-      {/*<Image*/}
-      {/*  fixed={data.avatar.childImageSharp.fixed}*/}
-      {/*  alt={author}*/}
-      {/*  style={{*/}
-      {/*    marginRight: rhythm(1 / 2),*/}
-      {/*    marginBottom: 0,*/}
-      {/*    minWidth: 50*/}
-      {/*  }}*/}
+       <Image
+        fixed={data.avatar.childImageSharp.fixed}
+        alt={author}
+        style={{
+          marginRight: rhythm(1 / 2),
+          marginBottom: 0,
+          marginTop: 15,
+          minWidth: 50
+        }}
 
-      {/*/>*/}
-      {/*  <p>하마 개발은*/}
-      {/*      '<strong>하마</strong>*/}
-      {/*      터면*/}
-      {/*      <strong>개발 </strong>안할뻔 했다' 의 줄임말 입니다.*/}
-      {/*      이 블로그는 비전공 개발자 차씨가 개발자로 성장하며 만들어 나가는 소소한 이야기와 개발 지식들을 다룹니다.*/}
-      {/*      <br/>*/}
-      {/*      <a href="https://www.facebook.com/cha.jesse">페이스북 둘러보기</a>*/}
-      {/*  </p>*/}
+      />
+
+
+
+      <p style={{
+        fontSize: 16
+        
+        
+      }}> 
+      러닝맨은 배움과 성장을 다루는 미디어입니다. 배우는 인간 3명(
+        <Link to={'tags/eddy'}> Eddy</Link> 
+        ,  
+        <Link to={'tags/jesse'}> Jesse</Link>
+        ,  
+        <Link to={'tags/kay'}> Kay</Link>
+        )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접 경험한 생각만 담습니다. 멋있는 척 하지 않습니다. 여러분의 배움과 성장에 도움이 되었으면 좋겠습니다.
+
+
+      </p>
     </div>
   )
 }
