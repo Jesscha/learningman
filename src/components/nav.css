@@ -1,0 +1,51 @@
+.navWrapper {
+    flex: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.navBox {
+    border: 1px solid rgba(0, 0, 0, 0.3);   
+    padding: 10px;
+    transition: all;
+    min-width: 80px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;  
+    box-shadow: inset 0em -1px rgba(0,0,0,0.2);
+    height: 50px;
+    text-align: center;
+    transition: all, ease-out;
+    
+    transition-duration: 100ms;
+}
+
+.navBox:hover {
+    background-color: rgba(70, 101, 183, 0.5)
+}
+
+
+
+.navBox.navBox-active {
+    border-bottom-color: transparent;
+    box-shadow: 1.5px 0px 0px 0.0px rgba(0,0,0,0.2);   
+    transform: scale(1.1, 1);
+    background-color: rgb(70, 101, 183);
+    
+}
+.navBox.navBox-active a{
+    color: white;
+}
+
+
+
+.navBox.navBox-end {
+    flex:auto;
+    color: transparent;
+    border-color: transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    min-width: 0px;
+}
+
+.navBox.navBox-end:hover {
+    background-color: transparent;
+}
