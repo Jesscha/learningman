@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 565px) {
+    .image-hidden {
+        
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .image-hidden {
+        opacity: 0;
+        
+    }
+}
+
+
+
+
+.image {
+    transition: all;
+    transition-duration: 1000ms;
+}
