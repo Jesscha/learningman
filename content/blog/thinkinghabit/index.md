@@ -1,7 +1,7 @@
 ---
 title: 생각 잘하는법에 대한 생각
 date: "2020-04-06T06:40:32.169Z"
-description: 알고리즘 공부를 하면서 느낀 생각에 대한 생각
+description: 알고리즘에서 배운 생각 잘하는 법 
 ogimage: './aris.png'
 tags: ["essay", "jesse"]
 ---
