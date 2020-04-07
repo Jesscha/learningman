@@ -19,11 +19,8 @@ const Nav = ({tag, location}) => {
         }
 
     useEffect(()=>{
-        
         current = document.getElementById(tag) 
-        console.log(current)
         const changeFirstCategory  = ()=>{
-            
             document.getElementById('all').innerText = tag
             document.getElementById('all').parentElement.classList.add('navBox-active')
         }
