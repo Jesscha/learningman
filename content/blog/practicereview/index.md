@@ -1,5 +1,5 @@
 ---
-title: 벤자민 프랭클린 따라잡기: 중간 점검
+title: 벤자민 프랭클린 따라잡기 - 중간 점검
 date: "2020-04-12T19:40:32.169Z"
 description: 조회수 예측 및 카피라이팅 훈련 결과 리뷰
 ogimage: './pic3.png'
@@ -63,9 +63,10 @@ tags: ["challenge", "writing", "eddy"]
 
 
 
-```
+
 ![문제지](./pic1.png)
-```
+
+
 
 
 
@@ -81,9 +82,9 @@ tags: ["challenge", "writing", "eddy"]
 
 
 
-```
+
 ![중복 데이터](./pic2.png)
-```
+
 
 
 
@@ -111,9 +112,9 @@ tags: ["challenge", "writing", "eddy"]
 
 
 
-```
+
 ![예측데이터](./pic3.png)
-```
+
 
 
 
@@ -123,9 +124,8 @@ tags: ["challenge", "writing", "eddy"]
 
 
 
-```
+
 ![오차 추이](./pic4.png)
-```
 
 
 
@@ -171,9 +171,9 @@ tags: ["challenge", "writing", "eddy"]
 
 
 
-```
+
 ![카피 레퍼런스](./pic5.png)
-```
+
 
 
 
@@ -187,9 +187,8 @@ tags: ["challenge", "writing", "eddy"]
 
 
 
-```
+
 ![설문 톡](./pic6.png)
-```
 
 
 
@@ -199,9 +198,9 @@ tags: ["challenge", "writing", "eddy"]
 
 
 
-```
+
 ![설문 조사](./pic7.png)
-```
+
 
 
 
