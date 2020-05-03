@@ -2,7 +2,7 @@
 title: 사람은 실수를 한다. 나도 그렇다.
 date: "2020-05-03T06:40:32.169Z"
 description: 알고리즘 첼린지 실패담
-ogimage: './main.jpg'
+ogimage: './main.png'
 tags: ["essay", "challenge","jesse"]
 ---
 
