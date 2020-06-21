@@ -1,9 +1,9 @@
 ---
 title: 석유 시리즈 2편 - 석유제품이란 무엇인가
-date: "2020-06-21T23:30:00.000Z"
+date: "2020-06-22T00:30:00.000Z"
 description: OIL 102
 ogimage: ‘./refinery.jpg'
-tags: ["essay", "oil_series”, "kay"]
+tags: ["essay", "oil_series", "kay"]
 ---
 
 ## 가스러쉬 당해본 적 있어?
@@ -22,6 +22,7 @@ tags: ["essay", "oil_series”, "kay"]
 
 ![oilseries2](/concept.jpg)
 <center><em>석유는 찌꺼기까지 우리 삶에 활용된다.</em></center>
+<br>
 
 그림에 나와있는 것처럼 원유를 정제하면 LPG(Liquified Petroleum Gas, 석유 가스), Gasoline(휘발유), Naphtha(납사 혹은 나프타), Jet(항공유)/Kerosene(등유), Diesel(경유), Fuel Oil(선박유), Asphalt(아스팔트) 등이 나온다. 단순히 끓이는 화학 공정 이외에 아주 다양한 공정이 존재하지만 아주 단순하게 보면 열을 통해 분리하는 공정, 촉매를 투입하여 분리하는 공정이 있다. 사실 정유 산업에서 공정의 종류를 구분하는 다양한 기준들([1](https://blog.naver.com/PostView.nhn?blogId=sayrdk&logNo=40193073320&parentCategoryNo=&categoryNo=57&viewDate=&isShowPopularPosts=true&from=search), [2](https://www.planete-energies.com/en/medias/close/three-stages-refining))이 있지만, 나 역시 아직 공정 부분에 대해서는 완벽하게 알지 못하므로 참고 자료를 참조하면 좋을 것이다.
 
