@@ -3,7 +3,7 @@ title: 코로나 시국에 철학 수업 듣기
 date: "2020-07-05T15:30:00.000Z"
 description: 빛을 세우는 터전
 ogimage: ‘./lighthouse.jpg’
-tags: ["essay", “lighthouse”, "kay"]
+tags: ["essay", "lighthouse", "kay"]
 ---
 
 ## 2020 1H 점검 나왔습니다~
