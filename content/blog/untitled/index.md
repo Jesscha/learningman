@@ -1,5 +1,5 @@
 ---
-title: 2020년 전반기...나, 잘살왔을까?
+title: 2020년 전반기...나, 잘 살았을까?
 date: "2020-07-12T06:40:32.169Z"
 description: 솔직히 나쁘지 않았다
 ogimage: "./thumbnail.png"
