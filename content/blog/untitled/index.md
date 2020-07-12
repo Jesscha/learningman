@@ -1,7 +1,7 @@
 ---
 title: 2020년 전반기...나, 잘살왔을까?
 date: "2020-07-12T06:40:32.169Z"
-description: 2020년 절반회고한다는 제목글에서 얻은 깨닳음 한줄 요약
+description: 솔직히 나쁘지 않았다
 ogimage: "./thumbnail.png"
 tags: ["essay", "jesse"]
 ---
