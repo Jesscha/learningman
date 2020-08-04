@@ -2,7 +2,7 @@
 title:  가장 개인적인 것이 가장 대중적이다
 date:  "2020-06-08T10:40:32.169Z"
 description: 좋아요 받는 글쓰기 프로젝트 중간 점검
-ogimage: './likes_thumbnail.png'
+ogimage: './likes_thumbnail2.png'
 tags: ["writing", "challenge", "eddy"]
 ---
 
@@ -103,3 +103,19 @@ tags: ["writing", "challenge", "eddy"]
 - 더 사적인 글을 올린다. 
 
 6월달엔 '공감'을 더 많이 가져오겠다. 그럼 이만.
+
+
+
+----
+
+
+
+[5주 후 - 업데이트]
+
+- 좋아요 평균 100개는 달성한 주도 있고, 못한 주도 있다. 월 평균으로는 달성하지 못했다. 
+
+- 하지만 그래프 자체도 꾸준히 우상향했고, 계속 좋아요를 누르는 Audience가 증가한 것은 충분히 의미있었다.
+
+
+
+![likes](./likes_thumbnail2.png)
