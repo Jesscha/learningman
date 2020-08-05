@@ -8,6 +8,13 @@ import "./post.css"
 import {kebabCase} from "lodash";
 
 class BlogPostTemplate extends React.Component {
+
+    componentDidMount(){
+        window.scrollTo(0,0)
+    }
+        
+    
+
     render() {
         const post = this.props.data.markdownRemark;
         const siteTitle = this.props.data.site.siteMetadata.title;
@@ -19,7 +26,6 @@ class BlogPostTemplate extends React.Component {
             identifier: post.fields.slug,
             title: post.frontmatter.title,
         };
-
 
 
         return (
@@ -55,7 +61,6 @@ class BlogPostTemplate extends React.Component {
                             <div
                                 style={{
                                      marginBottom: rhythm(1),
-
                                 }}
                             >
                                 <span>tags: </span>
@@ -65,9 +70,7 @@ class BlogPostTemplate extends React.Component {
                                         marginLeft:0,
 
                                     }}
-
                                 >
-
                                     {post.frontmatter.tags.map(tag =>(
                                             <li
                                                 key={tag + `tag`}
@@ -77,7 +80,7 @@ class BlogPostTemplate extends React.Component {
                                                     paddingLeft: rhythm(1),
                                                 }}
                                             >
-                                                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                                                <Link to={`/tags/${kebabCase(tag)}`} onClick={()=> window.scrollTo(0,0)}>{tag}</Link>
                                             </li>
                                         )
                                     )}
@@ -89,8 +92,7 @@ class BlogPostTemplate extends React.Component {
                             marginBottom: rhythm(1),
                         }}
                     />
-                    <CommentCount config={disqusConfig} placeholder={''} />
-                    <Disqus config={disqusConfig} />
+           
                     <footer>
 
                     </footer>

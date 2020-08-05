@@ -3,7 +3,7 @@ title: 내가 세상을 보는 관점을 심어준 사람
 date: "2020-03-29T19:40:32.169Z"
 description: 실리콘밸리의 소크라테스, 나발 라비칸트(Naval Ravikant)
 ogimage: './naval_thumbnail.jpg'
-tags: ["essay", "habit", "wealth", "happiness" "eddy"]
+tags: ["essay", "habit", "wealth", "happiness", "eddy"]
 ---
 
 나발 라비칸트는 실리콘밸리의 핵인싸이자 오피니언 리더다. 엔젤리스트(Angelist)라는 성공한 스타트업을 창업했고, 우버나 트위터 등 유명 기업 초기투자자이기도 하다. 
