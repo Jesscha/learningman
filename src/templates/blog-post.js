@@ -153,7 +153,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
-        ogimage
+        ogimage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     }
   }
