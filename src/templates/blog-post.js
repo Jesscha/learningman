@@ -17,7 +17,10 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const { ogimage } = post.frontmatter
-    const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
+    // 에러 때문에 일단 지움 아래에 childImageSharp 를 지움
+    // const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
+    const ogImagePath = ogimage
+
     const disqusConfig = {
       url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
       identifier: post.fields.slug,
