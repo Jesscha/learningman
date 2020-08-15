@@ -5,7 +5,7 @@ module.exports = {
     description: `잘하기보다 자라기`,
     //URL이 URL의 형태를 가지지 않으면 config.js 벨리데이션에 실패한다. 반드시 url 처럼 생긴 주소를 써야 한다.
     siteUrl: `https://learningman.co/`,
-    image:"",
+    image: "",
     social: {
       twitter: ``,
     },
@@ -13,24 +13,27 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-google-adsense`,
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
       options: {
-        publisherId: `ca-pub-3733948010849819`
+        publisherId: `ca-pub-3733948010849819`,
       },
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-MTN6L7L",
-  
+
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false,
-  
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         // Defaults to null
         defaultDataLayer: { platform: "gatsby" },
-  
+
         // Specify optional GTM environment details.
         gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
         gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
@@ -172,12 +175,10 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
-      
     },
-    
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
 }
-
