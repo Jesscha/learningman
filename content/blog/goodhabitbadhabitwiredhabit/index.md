@@ -42,33 +42,32 @@ tags: ["essay", "jesse"]
 
 ---
 
-1. Clearly decide on a specific new habit
+- Clearly decide on a specific new habit
 
-- 구체적으로 어떤 습관을 할지 정의해야 한다. 그래야 할 수 있다.
+  - 구체적으로 어떤 습관을 할지 정의해야 한다. 그래야 할 수 있다.
 
-1. Never allow exception
+- Never allow exception
 
-- 습관을 형성하는 도중에는 절대 예외를 허용해서는 안 된다.
+  - 습관을 형성하는 도중에는 절대 예외를 허용해서는 안 된다.
 
-1. Let others know about your goal
+- Let others know about your goal
 
-- 다른 사람들에게 목표에 대해 말함으로써 자신을 더 통제할 수 있게 된다.
+  - 다른 사람들에게 목표에 대해 말함으로써 자신을 더 통제할 수 있게 된다.
 
-1. Visualize yourself behaving a particular way
+- Visualize yourself behaving a particular way
 
-- 내가 특정 행동을 하는 것을 상상하면 나의 뇌는 그 행동을 더 친숙하게 느끼고 습관으로 행동이 형성되는 속도를 빠르게 해 준다.
+  - 내가 특정 행동을 하는 것을 상상하면 나의 뇌는 그 행동을 더 친숙하게 느끼고 습관으로 행동이 형성되는 속도를 빠르게 해 준다.
 
-1. Create affirmation
+- Create affirmation
 
-- 특정한 행동을 내가 할 것이라고, 스스로 이야기한다. 나는 매일 아침 7시에 일어나 운동하는 사람이다.
+  - 특정한 행동을 내가 할 것이라고, 스스로 이야기한다. 나는 매일 아침 7시에 일어나 운동하는 사람이다.
 
-1. Persist until it is automatic
+- Persist until it is automatic
 
-- 습관화되면 하는 것이 안 하는 것보다 더 자연스러워 진다. 그때까지 계속 의도적으로 행동해야 한다.
+  - 습관화되면 하는 것이 안 하는 것보다 더 자연스러워 진다. 그때까지 계속 의도적으로 행동해야 한다.
 
-1. Reward yourself
-
-- 행동에 대한 보상을 받으면 뇌에서 도파민이 분비되어 해당 행동을 뇌에서 더 빨리 습관으로 받아들이게 된다.
+- Reward yourself
+  - 행동에 대한 보상을 받으면 뇌에서 도파민이 분비되어 해당 행동을 뇌에서 더 빨리 습관으로 받아들이게 된다.
 
 ---
 
