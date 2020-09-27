@@ -1,7 +1,7 @@
 ---
-title: 비전공 개발자의 첫 프로젝트 배포 후기
+title: 병아리 개발자의 첫 프로젝트 배포 후기
 date: "2020-09-27T06:40:32.169Z"
-description: 드디어 개발자의 삶을 제대로 느꼇다.
+description: 드디어 개발자의 삶을 제대로 느꼈다.
 ogimage: "./thumbnail.png"
 tags: ["essay", "jesse"]
 ---
