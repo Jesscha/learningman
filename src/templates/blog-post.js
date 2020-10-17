@@ -14,6 +14,7 @@ class BlogPostTemplate extends React.Component {
 
   render() {
     const post = this.props.data.markdownRemark
+
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const { ogimage } = post.frontmatter
@@ -34,6 +35,31 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           image={ogImagePath}
         />
+        <div
+          style={{
+            marginBottom: rhythm(0),
+            backgroundColor: `#f9f9f9`,
+            borderRadius: `5px`,
+            padding: `15px`,
+            marginBottom: `15px`,
+            fontSize: "16px",
+            color: "",
+          }}
+        >
+          <i>
+            러닝맨에 방문해 주셔서 감사합니다. 더 나은 성장꾼이 되기 위한 &nbsp;
+            <strong>
+              <a
+                href="https://docs.google.com/forms/d/1ktb7Fbke5Y388qW5yEIB170No4eJyheMGhu5yxHthuU/edit"
+                target="blank"
+              >
+                설문
+              </a>
+            </strong>
+            을 준비 했습니다. 바쁘시겠지만, 시간내어 저희의 성장에 동참해 주시면
+            감사하겠습니다.
+          </i>
+        </div>
         <article>
           <header>
             <h1
@@ -44,6 +70,7 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.title}
             </h1>
+
             <p
               style={{
                 ...scale(-1 / 5),
