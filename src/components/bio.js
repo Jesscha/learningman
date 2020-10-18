@@ -88,17 +88,16 @@ const Bio = () => {
         }}
       >
         <i>
-          러닝맨에 방문해 주셔서 감사합니다. 더 나은 성장꾼이 되기 위한 &nbsp;
+          더 나은 러닝맨이 될 수 있게 독자 여러분의 목소리를 들려주세요! (
           <strong>
             <a
               href="https://docs.google.com/forms/d/1ktb7Fbke5Y388qW5yEIB170No4eJyheMGhu5yxHthuU/edit"
               target="blank"
             >
-              설문
+              러닝맨에게 말걸기
             </a>
           </strong>
-          을 준비했습니다. 바쁘시겠지만, 시간을 내어 저희의 성장에 동참해 주시면
-          감사하겠습니다.
+          )
         </i>
       </div>
     </div>
