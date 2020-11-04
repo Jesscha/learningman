@@ -2,7 +2,7 @@
 title: 내가 꿈없이 사는 이유
 date: "2020-11-04T23:00:00.000Z"
 description: 꿈이 없을수도 있는 거지 뭘
-ogimage: "./new_emp.jpg"
+ogimage: "./thumbnail.png"
 tags: ["essay", "jesse"]
 ---
 
