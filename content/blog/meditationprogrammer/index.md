@@ -3,7 +3,7 @@ title: 명상하는 프로그래머
 date: "2020-11-18T06:40:32.169Z"
 description: 성장 촉진제, 명상
 ogimage: "./thumbnail.png"
-tags: ["essay", "jesse"]
+tags: ["essay", "jesse", "challenge"]
 ---
 
 ![썸네일](thumbnail.png)
