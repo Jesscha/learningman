@@ -2,7 +2,7 @@
 title: 난 왜 아직도 확실한 목표가 없을까 생각이 들 때 
 date: "2020-11-22T06:40:32.169Z"
 description: 읽어야 할 3가지 조언
-ogimage: './tyson.jpg'
+ogimage: './gradient.jpeg'
 tags: ["essay", "eddy"]
 ---
 
