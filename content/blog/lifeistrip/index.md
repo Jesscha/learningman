@@ -2,10 +2,10 @@
 title: 절대적인 기준으로 살기
 date: "2020-12-29T06:40:32.169Z"
 description: 다른 사람 인생에 신경쓸 필요 없는 이유
-ogimage: './thumbnail.png'
+ogimage: './thumbnail.jpeg'
 tags: ["essay","jesse"]
 ---
-![](./thumbnail.png)
+![](./thumbnail.jpeg)
 
 휴가다. 눈앞에는 파도가 치고 햇살은 따듯하다. 고양이들은 백사장을 뛰어다니며 놀고 있다. 올해 해야 할 일들은 모두 마쳤다. 상당히 개운한 기분일 줄 알았는데, 마음 한쪽이 불편하다.
 
