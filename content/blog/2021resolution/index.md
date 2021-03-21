@@ -1,9 +1,9 @@
 ---
 title: 2021 목표들
 date: "2021-03-21T10:30:00.000Z"
-description: 잘 하고 있다, 좀 더 잘하자
-ogimage: ‘./2021.jpg'
-tags: ["essay", "2021", "kay"]
+description: 안정적인 한 해를 살자
+ogimage: './2021.jpg'
+tags: ["essay", "kay", "goals"]
 ---
 
 ## 새해 목표: 안정적인 사람이 되자
