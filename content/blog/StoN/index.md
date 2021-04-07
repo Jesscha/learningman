@@ -6,7 +6,7 @@ ogimage: './thumbnail.jpg'
 tags: ["essay", "jesse"]
 ---
 
-
+![./thumbnail.jpg](./thumbnail.jpg)
 
 # 증권사 연구원이던 내가 이세계에서는 N사 개발자?!
 
