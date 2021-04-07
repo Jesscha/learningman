@@ -7,6 +7,7 @@ tags: ["essay", "jesse"]
 ---
 
 ![./thumbnail.jpg](./thumbnail.jpg)
+#### 꼭 트럭에 치어야만 다시 태어날 수 있는 것은 아니다. 
 
 # 증권사 연구원이던 내가 이세계에서는 N사 개발자?!
 
