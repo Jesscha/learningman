@@ -2,7 +2,7 @@
 title: 코드짜는 법-OOP와 FP
 date: "2021-05-16T23:09:02.169Z"
 description: 코드를 잘 짜기 위한 선배들의 유산
-ogimage: 'https://user-images.githubusercontent.com/42378241/118391578-e08e9d80-b66f-11eb-9046-bd220edbbe8b.png'
+ogimage: 'thumbnail.png'
 tags: ["essay", "jesse"]
 ---
 
