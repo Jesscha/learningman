@@ -2,7 +2,7 @@
 title: 가장 빠르게 스킬과 지식을 쌓는 방법 
 date: "2021-05-30T06:40:32.169Z"
 description: 인풋이 아닌, 아웃풋 중심으로 노력하기 
-ogimage: './qual.jpeg' 
+ogimage: './output_type.png' 
 tags: ["essay", "challenge", "eddy"]
 ---
 
@@ -215,7 +215,7 @@ tags: ["essay", "challenge", "eddy"]
 
 
 
-# 2. 공부보다 시험 먼저
+# 2. 지식: 공부보다 시험 먼저
 
 
 
@@ -372,7 +372,7 @@ tags: ["essay", "challenge", "eddy"]
 
 
 
-### **생각보다 **표현 먼저: HOW-TO **팁**
+### **생각보다 표현 먼저: HOW-TO 팁**
 
 1. **콘텐츠 요약, 리뷰 쓰기** 
 
