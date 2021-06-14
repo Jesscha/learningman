@@ -2,7 +2,7 @@
 title: 다마고치 프로젝트 중간점검
 date: "2021-06-14T00:00:00.000Z"
 description: 다마고치 프로젝트 -1
-ogimage: './kakao.jpg'
+ogimage: './kakao.png'
 tags: ["essay", "robbie"]
 ---**
 
