@@ -4,9 +4,9 @@ date: "2021-06-14T00:00:00.000Z"
 description: 다마고치 프로젝트 -1
 ogimage: './kakao.png'
 tags: ["essay", "robbie"]
----**
+---
 
-# 발단은 하나의 카톡 이였다.
+# 발단은 하나의 카톡이었다.
 
 ![카톡사](./kakao.png)
 
