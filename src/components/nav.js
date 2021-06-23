@@ -9,6 +9,7 @@ const Nav = ({tag, location}) => {
     const [move, setMove] = useState(false);
     let current;
     const navRef = useRef(null)
+    console.log(tag)
 
     const scrollToNav = (ref) => {
         ref && ref.current && window.scrollTo({
@@ -19,7 +20,7 @@ const Nav = ({tag, location}) => {
         }
 
     useEffect(()=>{
-        current = document.getElementById(tag) 
+        current = document.getElementById(`nav-${tag}`) 
         // const changeFirstCategory  = ()=>{
         //     document.getElementById('all').innerText = tag
         //     document.getElementById('all').parentElement.classList.add('navBox-active')
@@ -27,16 +28,11 @@ const Nav = ({tag, location}) => {
         // const changeFirstCategoryToAll = () =>{
         //     document.getElementById('all')?parentElement.classList.add('navBox-active')
         // }
-        // current?current.parentElement.classList.add('navBox-active') : 
-        // location && location.pathname === "/" ?
-        // changeFirstCategoryToAll()
-        // :
-        // changeFirstCategory()
-
+        current && current.parentElement.classList.add('navBox-active')
         const navWrapper = document.querySelector('.navWrapper')
-        const navPosition = navWrapper.offsetTop
+        // const navPosition = navWrapper.offsetTop
         
-    },[]
+    },[tag]
     )
     
 
@@ -48,7 +44,7 @@ const Nav = ({tag, location}) => {
     }}>
 <div className='navWrapper' ref={navRef}>
     <div className="navBox" >
-        <Link id={"nav-Eddy"} to={'/tags/eddy'} >
+        <Link id={"nav-eddy"} to={'/tags/eddy'} >
                 Eddy
         </Link>
     </div>
@@ -58,12 +54,12 @@ const Nav = ({tag, location}) => {
         </Link>
     </div>
     <div className="navBox" >
-        <Link id={"nav-Kay"} to={'/tags/kay'} >
+        <Link id={"nav-kay"} to={'/tags/kay'} >
                 Kay
         </Link>
     </div>
     <div className="navBox" >
-        <Link id={"nav-Robbie"} to={'/tags/robbie'} >
+        <Link id={"nav-robbie"} to={'/tags/robbie'} >
                 Robbie
         </Link>
     </div>
