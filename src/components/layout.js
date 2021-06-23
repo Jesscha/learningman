@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Bio from "./bio"
 import Nav from "./nav"
+import AuthorDescription from "./authorDescription"
 
 class Layout extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class Layout extends React.Component {
 
     const rootPath = `${__PATH_PREFIX__}/`
     let header
+    
 
     if ((location && location.pathname === rootPath) || tag) {
       header = (
@@ -44,6 +46,7 @@ class Layout extends React.Component {
           </p>
           <Bio />
           <Nav tag={tag} location={location} />
+          <AuthorDescription tag={tag} />
         </>
       )
     } else {
