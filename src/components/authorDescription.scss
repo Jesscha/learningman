@@ -1,0 +1,19 @@
+.author-thumbnail{
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+
+    img{ 
+        width: 100%;
+        background-color: rgba(0,0,0,0.05);
+        margin-bottom: 0;
+    }
+
+   
+}
+
+ .author-description-wrapper{
+        display: flex;
+        align-items: center;
+}
+
