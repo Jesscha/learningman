@@ -23,8 +23,8 @@
 }
 
 .author-desc{
-    height: 100px;
-    max-height: 100px;
+    // height: 100px;
+    // max-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,4 +43,16 @@
     margin-right: 8px;
     
 
+}
+
+
+@media ( max-width : 414px) {
+
+ .author-description-wrapper{
+        
+        align-items: flex-start;
+        
+}
+
+    
 }

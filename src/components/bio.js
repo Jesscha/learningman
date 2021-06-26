@@ -55,7 +55,11 @@ const Bio = () => {
           
         }}
       >
-        <div className="image image-hidden">
+        <div className="image image-hidden" 
+          style={{
+            marginRight: 16
+          }}
+        >
          <img
           src ="/img/Avatar_withline.png"
           style={{
@@ -77,7 +81,8 @@ const Bio = () => {
             alignItems: 'center',
             verticalAlign: 'center',
             backgroundColor: `#f9f9f9`,
-            padding : 16
+            padding : 16,
+            marginLeft: 0
           }}
         >
           <div >
