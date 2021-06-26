@@ -33,6 +33,12 @@
     font-weight: bold;
 }
 
+.navBox a{
+    color: rgba(0,0,0,0.3);
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .navBox:hover {
     /* background-color: rgba(70, 101, 183, 0.5) */
 }
