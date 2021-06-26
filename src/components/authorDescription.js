@@ -35,55 +35,67 @@ const AuthorDescription = ({tag}) =>{
     const AuthorDesc= ({author}) =>{
         if(author === AUTHORS[0]){
             return <div className = "author-desc">
-                desc
+                작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 
+                <div className  = "author-link-wrapper">
+                    <AuthorLink link=""  linkLogoUrl="/img/facebook.png"/>
+                    <AuthorLink link=""  linkLogoUrl="/img/brunch.png"/>
+                    <AuthorLink link=""  />
+                </div>
             </div>
         }
         if(author === AUTHORS[1]){
             return <div className = "author-desc">
-                desc
+                작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 
+                <div className  = "author-link-wrapper">
+                    <AuthorLink link=""  linkLogoUrl="/img/facebook.png"/>
+                    <AuthorLink link=""  linkLogoUrl="/img/brunch.png"/>
+                    <AuthorLink link=""  />
+                </div>
             </div>
         }
         if(author === AUTHORS[2]){
             return <div className = "author-desc">
-                desc
+                작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 
+                <div className  = "author-link-wrapper">
+                    <AuthorLink link=""  linkLogoUrl="/img/facebook.png"/>
+                    <AuthorLink link=""  linkLogoUrl="/img/brunch.png"/>
+                    <AuthorLink link=""  />
+                </div>
             </div>
         }
         if(author === AUTHORS[3]){
             return <div className = "author-desc">
-                desc
+                작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다 
+                <div className  = "author-link-wrapper">
+                    <AuthorLink link=""  linkLogoUrl="/img/facebook.png"/>
+                    <AuthorLink link=""  linkLogoUrl="/img/brunch.png"/>
+                    <AuthorLink link=""  />
+                </div>
             </div>
         }
         return <></>
     }
 
-    const Link = ({fb, brunc, etc})=>{
+    const AuthorLink = ({ linkLogoUrl, link })=>{
+
+        return <div className  = "author-link">
+            <a
+            href ={link}
+            >
+                <img
+                    src = {linkLogoUrl ? linkLogoUrl : '/img/link.png'}
+                    alt = ''
+                />
+                
+            </a>
+            
+            
+            
+        </div>
         
 
     }
 
-    const AuthorLinks = ({author}) =>{
-         if(author === AUTHORS[0]){
-            return <div className = "author-desc">
-                desc
-            </div>
-        }
-        if(author === AUTHORS[1]){
-            return <div className = "author-desc">
-                desc
-            </div>
-        }
-        if(author === AUTHORS[2]){
-            return <div className = "author-desc">
-                desc
-            </div>
-        }
-        if(author === AUTHORS[3]){
-            return <div className = "author-desc">
-                desc
-            </div>
-        }
-        return <></>
-    }
  
     return(
     <div className = "author-description-wrapper">

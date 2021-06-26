@@ -6,17 +6,25 @@
 }
 .navBox {
     /* border: 1px solid rgba(0, 0, 0, 0.3);    */
+    /* 배치를 왼쪽으로 */
     padding: 10px;
+    padding-left: 0;
+    margin-right: 16px;
     transition: all;
-    min-width: 80px; 
+    width: fit-content;
     /* border-top-left-radius: 5px; */
     /* border-top-right-radius: 5px;   */
     /* box-shadow: inset 0em -1px rgba(0,0,0,0.2); */
     height: 50px;
     text-align: center;
     transition: all, ease-out;
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     transition-duration: 100ms;
+}
+.navBox:first-of-type{
+    
 }
 
 .navBox a{

@@ -9,7 +9,7 @@ const Nav = ({tag, location}) => {
     const [move, setMove] = useState(false);
     let current;
     const navRef = useRef(null)
-    console.log(tag)
+    
 
     const scrollToNav = (ref) => {
         ref && ref.current && window.scrollTo({
