@@ -16,10 +16,10 @@ import "./bio.css"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/gatsby-icon.png/" }) {
+      avatar: file(absolutePath: { regex: "/avatar_with_line-desc.png/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
+          fixed {
+            src
           }
         }
       }
@@ -34,7 +34,7 @@ const Bio = () => {
     }
   `)
 
-  const { author } = data.site.siteMetadata
+  const avatarUrl = data.avatar.childImageSharp.fixed.src
   return (
     <div
       style={{
@@ -50,25 +50,25 @@ const Bio = () => {
       <div
         style={{
           display: `flex`,
-          alignItems: 'center',
-          justifyContent: 'flex-start'
-          
+          alignItems: "center",
+          justifyContent: "flex-start",
         }}
       >
-        <div className="image image-hidden" 
+        <div
+          className="image image-hidden"
           style={{
-            marginRight: 16
+            marginRight: 16,
           }}
         >
-         <img
-          src ="/img/Avatar_withline.png"
-          style={{
-            width: 160,
-            minWidth : '160px',
-            marginBottom: 0
-        // backgroundColor: `#f9f9f9`,
-        }}
-         />
+          <img
+            src={avatarUrl}
+            style={{
+              width: 160,
+              minWidth: "160px",
+              marginBottom: 0,
+              // backgroundColor: `#f9f9f9`,
+            }}
+          />
         </div>
 
         <p
@@ -76,27 +76,24 @@ const Bio = () => {
             fontSize: 16,
             marginBottom: 0,
             marginLeft: 20,
-            height :130,
-            display : 'flex',
-            alignItems: 'center',
-            verticalAlign: 'center',
+            height: 130,
+            display: "flex",
+            alignItems: "center",
+            verticalAlign: "center",
             backgroundColor: `#f9f9f9`,
-            padding : 16,
-            marginLeft: 0
+            padding: 16,
+            marginLeft: 0,
           }}
         >
-          <div >
+          <div>
             러닝맨은 당신의 배움과 성장을 도와줄 미디어입니다. 배우는 인간 4명(
-          <Link to={"/tags/eddy"}> Eddy</Link>,
-          <Link to={"/tags/jesse"}> Jesse</Link>,
-          <Link to={"/tags/kay"}> Kay </Link>,
-          <Link to={"/tags/robbie"}> Robbie </Link>
-          )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접 경험한
-          생각만 담습니다. 멋있는 척 하지 않습니다.
-
+            <Link to={"/tags/eddy"}> Eddy</Link>,
+            <Link to={"/tags/jesse"}> Jesse</Link>,
+            <Link to={"/tags/kay"}> Kay </Link>,
+            <Link to={"/tags/robbie"}> Robbie </Link>
+            )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접
+            경험한 생각만 담습니다. 멋있는 척 하지 않습니다.
           </div>
-
-          
         </p>
       </div>
       {/* <hr style={{ margin: "8px" }}></hr> */}
