@@ -6,7 +6,8 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import "./post.css"
 import { kebabCase } from "lodash"
-
+import AuthorDescription from "../components/authorDescription"
+// 함수 컴포넌트로 바꾸자
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0)
@@ -27,6 +28,8 @@ class BlogPostTemplate extends React.Component {
       identifier: post.fields.slug,
       title: post.frontmatter.title,
     }
+
+    // 저자를 발라내자
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -69,7 +72,6 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.title}
             </h1>
-
             <p
               style={{
                 ...scale(-1 / 5),
@@ -79,11 +81,15 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
+            여긴가
+            {console.log(this.props.data.markdownRemark.frontmatter.tags)}
+            {/* 작은놈용 컴포넌트를 하나 새로 만들까?  */}
           </header>
           <section
             className="blog-post"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
+          <AuthorDescription tag={"jesse"} />
           {post.frontmatter.tags ? (
             <div
               style={{
