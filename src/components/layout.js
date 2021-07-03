@@ -12,7 +12,6 @@ class Layout extends React.Component {
 
     const rootPath = `${__PATH_PREFIX__}/`
     let header
-    
 
     if ((location && location.pathname === rootPath) || tag) {
       header = (
@@ -23,17 +22,19 @@ class Layout extends React.Component {
               marginBottom: 0,
               marginTop: 0,
             }}
+            onClick={() => {
+              window.location.reload()
+            }}
           >
-            <Link
+            <span
               style={{
                 boxShadow: `none`,
                 textDecoration: `none`,
                 color: `inherit`,
               }}
-              to={`/`}
             >
               {title}
-            </Link>
+            </span>
           </h1>
           <p
             style={{
