@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const { ogimage } = post.frontmatter
     // 에러 때문에 일단 지움 아래에 childImageSharp 를 지움
-    const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
+    // const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
     // const ogImagePath = ogimage
 
     const disqusConfig = {
@@ -30,13 +30,30 @@ class BlogPostTemplate extends React.Component {
     }
 
     // 저자를 발라내자
+    const author = () => {
+      const tags = this.props.data.markdownRemark.frontmatter.tags
+      if (tags.find(tag => tag === "eddy")) {
+        return "eddy"
+      }
+      if (tags.find(tag => tag === "jesse")) {
+        return "jesse"
+      }
+      if (tags.find(tag => tag === "kay")) {
+        return "kay"
+      }
+      if (tags.find(tag => tag === "robbie")) {
+        return "robbie"
+      }
+
+      return
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          image={ogImagePath}
+          image={ogimage}
         />
         <div
           style={{
@@ -81,15 +98,14 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
-            여긴가
-            {console.log(this.props.data.markdownRemark.frontmatter.tags)}
+            <AuthorDescription tag={author()} isSmall={true} />
             {/* 작은놈용 컴포넌트를 하나 새로 만들까?  */}
           </header>
           <section
             className="blog-post"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <AuthorDescription tag={"jesse"} />
+          <AuthorDescription tag={author()} />
           {post.frontmatter.tags ? (
             <div
               style={{
@@ -185,13 +201,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
-        ogimage {
-          childImageSharp {
-            fixed {
-              src
-            }
-          }
-        }
+        ogimage
       }
     }
   }

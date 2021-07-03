@@ -2,10 +2,13 @@ import { divide } from "lodash"
 import React, { useMemo } from "react"
 import { AUTHORS } from "../constants/constant"
 import "./authorDescription.scss"
-import { useStaticQuery, graphql } from "gatsby"
-import { useState } from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { useHistory, BrowserRouter as Router } from "react-router-dom"
 
-const AuthorDescription = ({ tag }) => {
+const AuthorDescription = ({ tag, isSmall }) => {
+  const history = useHistory()
+  console.log(history)
+
   const data = useStaticQuery(graphql`
     query MyQuery {
       allImageSharp(
@@ -34,7 +37,6 @@ const AuthorDescription = ({ tag }) => {
       )
     )
   }, [])
-  console.log(descImgArr)
 
   const AuthorCharacter = ({ author }) => {
     if (author === AUTHORS[0]) {
@@ -53,13 +55,15 @@ const AuthorDescription = ({ tag }) => {
     if (author === AUTHORS[1]) {
       return (
         <div className="author-thumbnail">
-          <img
-            src={
-              descImgArr.find(
-                ({ originalName }) => originalName === "jesse-desc.png"
-              ).originalImg
-            }
-          />
+          <Link to={`/tags/jesse`}>
+            <img
+              src={
+                descImgArr.find(
+                  ({ originalName }) => originalName === "jesse-desc.png"
+                ).originalImg
+              }
+            />
+          </Link>
         </div>
       )
     }
@@ -183,10 +187,19 @@ const AuthorDescription = ({ tag }) => {
   }
 
   return (
-    <div className="author-description-wrapper">
-      <AuthorCharacter author={tag} />
-      <AuthorDesc author={tag} />
-    </div>
+    <Router>
+      {isSmall ? (
+        <div className="author-description-wrapper-small">
+          <AuthorCharacter author={tag} />
+          <span className="author-name">{new String(tag).toUpperCase()}</span>
+        </div>
+      ) : (
+        <div className="author-description-wrapper">
+          <AuthorCharacter author={tag} />
+          <AuthorDesc author={tag} />
+        </div>
+      )}
+    </Router>
   )
 }
 
