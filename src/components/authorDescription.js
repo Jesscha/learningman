@@ -3,12 +3,8 @@ import React, { useMemo } from "react"
 import { AUTHORS } from "../constants/constant"
 import "./authorDescription.scss"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { useHistory, BrowserRouter as Router } from "react-router-dom"
 
 const AuthorDescription = ({ tag, isSmall }) => {
-  const history = useHistory()
-  console.log(history)
-
   const data = useStaticQuery(graphql`
     query MyQuery {
       allImageSharp(
@@ -42,13 +38,15 @@ const AuthorDescription = ({ tag, isSmall }) => {
     if (author === AUTHORS[0]) {
       return (
         <div className="author-thumbnail">
-          <img
-            src={
-              descImgArr.find(
-                ({ originalName }) => originalName === "eddy-desc.png"
-              ).originalImg
-            }
-          />
+          <Link to={`/tags/eddy`}>
+            <img
+              src={
+                descImgArr.find(
+                  ({ originalName }) => originalName === "eddy-desc.png"
+                ).originalImg
+              }
+            />
+          </Link>
         </div>
       )
     }
@@ -70,26 +68,30 @@ const AuthorDescription = ({ tag, isSmall }) => {
     if (author === AUTHORS[2]) {
       return (
         <div className="author-thumbnail">
-          <img
-            src={
-              descImgArr.find(
-                ({ originalName }) => originalName === "kay-desc.png"
-              ).originalImg
-            }
-          />
+          <Link to={`/tags/kay`}>
+            <img
+              src={
+                descImgArr.find(
+                  ({ originalName }) => originalName === "kay-desc.png"
+                ).originalImg
+              }
+            />
+          </Link>
         </div>
       )
     }
     if (author === AUTHORS[3]) {
       return (
         <div className="author-thumbnail">
-          <img
-            src={
-              descImgArr.find(
-                ({ originalName }) => originalName === "robbie-desc.png"
-              ).originalImg
-            }
-          />
+          <Link to={`/tags/robbie`}>
+            <img
+              src={
+                descImgArr.find(
+                  ({ originalName }) => originalName === "robbie-desc.png"
+                ).originalImg
+              }
+            />
+          </Link>
         </div>
       )
     }
@@ -187,7 +189,7 @@ const AuthorDescription = ({ tag, isSmall }) => {
   }
 
   return (
-    <Router>
+    <>
       {isSmall ? (
         <div className="author-description-wrapper-small">
           <AuthorCharacter author={tag} />
@@ -199,7 +201,7 @@ const AuthorDescription = ({ tag, isSmall }) => {
           <AuthorDesc author={tag} />
         </div>
       )}
-    </Router>
+    </>
   )
 }
 
