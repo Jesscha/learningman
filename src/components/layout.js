@@ -21,9 +21,10 @@ class Layout extends React.Component {
               ...scale(1.8),
               marginBottom: 0,
               marginTop: 0,
+              cursor: "pointer",
             }}
             onClick={() => {
-              window.location.reload()
+              window.location.href = "/"
             }}
           >
             <span
