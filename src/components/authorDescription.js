@@ -4,7 +4,7 @@ import { AUTHORS } from "../constants/constant"
 import "./authorDescription.scss"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-const AuthorDescription = ({ tag, isSmall }) => {
+const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       allImageSharp(
@@ -196,7 +196,13 @@ const AuthorDescription = ({ tag, isSmall }) => {
           <span className="author-name">{new String(tag).toUpperCase()}</span>
         </div>
       ) : (
-        <div className="author-description-wrapper">
+        <div
+          className="author-description-wrapper"
+          style={{
+            borderTop: isBorderTop ? "1px solid dimgray" : "",
+            borderBottom: isBorderBottom ? "1px solid dimgray" : "",
+          }}
+        >
           <AuthorCharacter author={tag} />
           <AuthorDesc author={tag} />
         </div>

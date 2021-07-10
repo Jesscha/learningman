@@ -18,8 +18,9 @@
 .author-description-wrapper {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid dimgray;
+  // border-bottom: 1px solid dimgray;
   padding-bottom: 16px;
+  padding-top: 16px;
 
   a {
     all: unset;

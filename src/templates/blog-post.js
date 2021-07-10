@@ -105,8 +105,8 @@ class BlogPostTemplate extends React.Component {
             className="blog-post"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <AuthorDescription tag={author()} />
-          {post.frontmatter.tags ? (
+          <AuthorDescription tag={author()} isBorderTop={true} />
+          {/* {post.frontmatter.tags ? (
             <div
               style={{
                 marginBottom: rhythm(1),
@@ -125,7 +125,7 @@ class BlogPostTemplate extends React.Component {
                     style={{
                       textDecoration: "none",
                       display: `inline`,
-                      paddingLeft: rhythm(1),
+                      paddingLeft: "8px",
                     }}
                   >
                     <Link
@@ -138,7 +138,7 @@ class BlogPostTemplate extends React.Component {
                 ))}
               </ul>
             </div>
-          ) : null}
+          ) : null} */}
           <hr
             style={{
               marginBottom: rhythm(1),

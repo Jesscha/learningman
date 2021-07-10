@@ -48,7 +48,7 @@ class Layout extends React.Component {
           </p>
           <Bio />
           <Nav tag={tag} location={location} />
-          <AuthorDescription tag={tag} />
+          <AuthorDescription tag={tag} isBorderBottom={true} />
         </>
       )
     } else {
