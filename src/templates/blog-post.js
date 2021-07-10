@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const { ogimage } = post.frontmatter
     // 에러 때문에 일단 지움 아래에 childImageSharp 를 지움
-    // const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
+    const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
     // const ogImagePath = ogimage
 
     const disqusConfig = {
@@ -53,9 +53,9 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          image={ogimage}
+          image={ogImagePath}
         />
-        <div
+        {/* <div
           style={{
             marginBottom: rhythm(0),
             backgroundColor: `#f9f9f9`,
@@ -78,7 +78,7 @@ class BlogPostTemplate extends React.Component {
             </strong>
             )
           </i>
-        </div>
+        </div> */}
         <article>
           <header>
             <h1
@@ -201,7 +201,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
-        ogimage
+        ogimage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     }
   }
