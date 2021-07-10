@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
 
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    // const { previous, next } = this.props.pageContext
     const { ogimage } = post.frontmatter
     // 에러 때문에 일단 지움 아래에 childImageSharp 를 지움
     const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
@@ -148,7 +148,7 @@ class BlogPostTemplate extends React.Component {
           <footer></footer>
         </article>
 
-        <nav>
+        {/* <nav>
           <ul
             style={{
               display: `flex`,
@@ -173,7 +173,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </Layout>
     )
   }
