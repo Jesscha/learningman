@@ -79,3 +79,5 @@ tags: ["essay", "oil_series", "kay"]
 > "록펠러는 강하게 중앙집중화된 사업 구조만이 'Orderliness'(질서)를 확보할 수 있음을 본능적으로 알았다. 지금 우리는 그러한 'Orderliness'를 지금 **수직적 통합**이라고 부른다."
 
 (To be continued)
+
+다음 [글](https://www.learningman.co/oilseries5/) 보기
