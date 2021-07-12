@@ -102,12 +102,18 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[0]) {
       return (
         <div className="author-desc">
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
+          스타트업, VC, 창업, 기자를 거쳐 PD로 일하고 있습니다. 글을 잘 쓰고
+          싶어서 매일 씁니다. 더 자라기 위한 고민을 많이 합니다. 배우는 걸
+          좋아해서 러닝맨을 시작했습니다. 꿈은 베스트셀러 작가.
           <div className="author-link-wrapper">
-            <AuthorLink link="" linkLogoType="fb" />
-            <AuthorLink link="" linkLogoType="brunch" />
-            <AuthorLink link="" />
+            <AuthorLink
+              link="https://www.facebook.com/bumgeun.eddy.song/"
+              linkLogoType="fb"
+            />
+            <AuthorLink
+              link="https://brunch.co.kr/@bumgeunsong"
+              linkLogoType="brunch"
+            />
           </div>
         </div>
       )
@@ -115,11 +121,15 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[1]) {
       return (
         <div className="author-desc">
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
+          증권사 연구원 -> 블록체인 컨설팅회사 창업 -> 개발자. 커리어 전환의
+          달인입니다. 차분한 마음으로 꾸준히 하면 어디서든 두각을 드러낼 수
+          있다고 믿습니다. 개발 실력, 마음의 자유에 관심이 많습니다. 애쓰지
+          않으면서도 열심히 사는 삶을 추구합니다.
           <div className="author-link-wrapper">
-            <AuthorLink link="" linkLogoType="fb" />
-            <AuthorLink link="" linkLogoType="brunch" />
+            <AuthorLink
+              link="https://www.facebook.com/cha.jesse"
+              linkLogoType="fb"
+            />
           </div>
         </div>
       )
@@ -127,12 +137,15 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[2]) {
       return (
         <div className="author-desc">
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
+          현재 정유사에서 해외영업을 담당하고 있습니다. 과거 스타트업과 컨설팅
+          회사에서 일을 한 경험이 있습니다. IT 산업과 에너지 산업에 관심이
+          많습니다. 중학교 때부터 지금까지 꿈은 대통령입니다. 하지만 대통령이
+          되지 않아도 행복할 수 있는 사람이 되려고 노력합니다. 최근에는
+          블록체인과 투자에 관심이 많으며, 재무적인 성장과 경제적 자유를
+          추구하는 흔한 아저씨입니다. 러닝맨에서 글 업로드 지각 벌금 최대주주 및
+          지나친 욕심쟁이를 맡고 있습니다.
           <div className="author-link-wrapper">
-            <AuthorLink link="" linkLogoType="fb" />
-            <AuthorLink link="" linkLogoType="brunch" />
-            <AuthorLink link="" />
+            <AuthorLink link="https://fb.com/withoutyoung" linkLogoType="fb" />
           </div>
         </div>
       )
@@ -140,12 +153,15 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[3]) {
       return (
         <div className="author-desc">
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
-          작가소개, 나는 너무 멋져 끝내준다 작가소개, 나는 너무 멋져 끝내준다
+          강아지처럼 살고 싶은 사람입니다. 그래서 영어 이름도 우리집 강아지
+          이름과 같습니다. 은하영웅 전설의 양 웬리처럼 전쟁을 누구보다 잘아는
+          전략가이지만 사실은 전쟁을 싫어하는 그런 사람이 되고 싶습니다. 사람을
+          잘 관찰하고 싶습니다.
           <div className="author-link-wrapper">
-            <AuthorLink link="" linkLogoType="fb" />
-            <AuthorLink link="" linkLogoType="brunch" />
-            <AuthorLink link="" />
+            <AuthorLink
+              link="https://www.facebook.com/robbieinertia"
+              linkLogoType="fb"
+            />
           </div>
         </div>
       )
