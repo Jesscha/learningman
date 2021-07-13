@@ -137,13 +137,7 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[2]) {
       return (
         <div className="author-desc">
-          현재 정유사에서 해외영업을 담당하고 있습니다. 과거 스타트업과 컨설팅
-          회사에서 일을 한 경험이 있습니다. IT 산업과 에너지 산업에 관심이
-          많습니다. 중학교 때부터 지금까지 꿈은 대통령입니다. 하지만 대통령이
-          되지 않아도 행복할 수 있는 사람이 되려고 노력합니다. 최근에는
-          블록체인과 투자에 관심이 많으며, 재무적인 성장과 경제적 자유를
-          추구하는 흔한 아저씨입니다. 러닝맨에서 글 업로드 지각 벌금 최대주주 및
-          지나친 욕심쟁이를 맡고 있습니다.
+          스타트업과 컨설팅을 거쳐 현재 정유사에서 해외영업을 담당하고 있습니다. IT 산업과 에너지 산업, 블록체인 및 기술 기반 프로덕트에 관심이 많습니다. 어릴 적부터 꿈은 대통령이지만 대통령이 되지 않아도 행복할 수 있는 사람으로 성장하려고 노력합니다.
           <div className="author-link-wrapper">
             <AuthorLink link="https://fb.com/withoutyoung" linkLogoType="fb" />
           </div>
