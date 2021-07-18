@@ -87,10 +87,10 @@ const Bio = () => {
         >
           <div>
             러닝맨은 당신의 배움과 성장을 도와줄 미디어입니다. 배우는 인간 4명(
-            <Link to={"/tags/eddy"}> Eddy</Link>,
+            <Link to={"/tags/eddy"}>Eddy</Link>,
             <Link to={"/tags/jesse"}> Jesse</Link>,
-            <Link to={"/tags/kay"}> Kay </Link>,
-            <Link to={"/tags/robbie"}> Robbie </Link>
+            <Link to={"/tags/kay"}> Kay</Link>,
+            <Link to={"/tags/robbie"}> Robbie</Link>
             )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접
             경험한 생각만 담습니다. 멋있는 척 하지 않습니다.
           </div>
