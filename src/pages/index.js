@@ -46,7 +46,9 @@ const BlogIndex = ({ data, location }) => {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-            </header>
+
+              </header>
+            
             <section>
               <p
                 dangerouslySetInnerHTML={{

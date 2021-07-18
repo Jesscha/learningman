@@ -92,7 +92,7 @@ const Bio = () => {
             <Link to={"/tags/kay"}> Kay</Link>,
             <Link to={"/tags/robbie"}> Robbie</Link>
             )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접
-            경험한 생각만 담습니다. 멋있는 척 하지 않습니다.
+            경험한 생각만 담습니다. 멋있는 척 하지 않습니다. <Link to={"https://astounding-author-8208.ck.page/d6b205043b"}>[러닝맨 구독하기]</Link>
           </div>
         </p>
       </div>
