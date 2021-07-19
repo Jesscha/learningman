@@ -7,6 +7,7 @@ import { rhythm, scale } from "../utils/typography"
 import "./post.css"
 import { kebabCase } from "lodash"
 import AuthorDescription from "../components/authorDescription"
+
 // 함수 컴포넌트로 바꾸자
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
@@ -24,10 +25,11 @@ class BlogPostTemplate extends React.Component {
     // const ogImagePath = ogimage
 
     const disqusConfig = {
-      url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
+      url: `${this.props.data.site.siteMetadata.siteUrl}`,
       identifier: post.fields.slug,
       title: post.frontmatter.title,
     }
+    console.log("config", disqusConfig)
 
     // 저자를 발라내자
     const author = () => {
@@ -106,6 +108,12 @@ class BlogPostTemplate extends React.Component {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <AuthorDescription tag={author()} isBorderTop={true} />
+          <>
+            <h1>{post.title}</h1>
+            <CommentCount config={disqusConfig} placeholder={''} />
+            <Disqus config={disqusConfig} />
+          </>
+
           {/* {post.frontmatter.tags ? (
             <div
               style={{
