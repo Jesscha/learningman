@@ -212,8 +212,8 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
         <div
           className="author-description-wrapper"
           style={{
-            borderTop: isBorderTop ? "1px solid dimgray" : "",
-            borderBottom: isBorderBottom ? "1px solid dimgray" : "",
+            borderTop: isBorderTop ? "1px solid rgba(0, 0, 0, 0.2)" : "",
+            borderBottom: isBorderBottom ? "1px solid rgba(0, 0, 0, 0.2)" : "",
           }}
         >
           <AuthorCharacter author={tag} />
