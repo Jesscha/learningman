@@ -54,11 +54,17 @@
 .author-description-wrapper-small {
   display: flex;
   align-items: center;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
   a {
     all: unset;
     cursor: pointer;
     width: 90%;
     height: 90%;
+  }
+  span {
+    color: hsla(0, 0%, 0%, 0.9);
   }
   .author-thumbnail {
     width: 50px;
@@ -66,10 +72,9 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 8px;
-    margin-bottom: 8px;
   }
   .author-name {
-    font-size: 12px;
+    font-size: 0.87055rem;
   }
 }
 

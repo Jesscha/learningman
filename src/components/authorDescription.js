@@ -38,60 +38,52 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[0]) {
       return (
         <div className="author-thumbnail">
-          <Link to={`/tags/eddy`}>
-            <img
-              src={
-                descImgArr.find(
-                  ({ originalName }) => originalName === "eddy-desc.png"
-                ).originalImg
-              }
-            />
-          </Link>
+          <img
+            src={
+              descImgArr.find(
+                ({ originalName }) => originalName === "eddy-desc.png"
+              ).originalImg
+            }
+          />
         </div>
       )
     }
     if (author === AUTHORS[1]) {
       return (
         <div className="author-thumbnail">
-          <Link to={`/tags/jesse`}>
-            <img
-              src={
-                descImgArr.find(
-                  ({ originalName }) => originalName === "jesse-desc.png"
-                ).originalImg
-              }
-            />
-          </Link>
+          <img
+            src={
+              descImgArr.find(
+                ({ originalName }) => originalName === "jesse-desc.png"
+              ).originalImg
+            }
+          />
         </div>
       )
     }
     if (author === AUTHORS[2]) {
       return (
         <div className="author-thumbnail">
-          <Link to={`/tags/kay`}>
-            <img
-              src={
-                descImgArr.find(
-                  ({ originalName }) => originalName === "kay-desc.png"
-                ).originalImg
-              }
-            />
-          </Link>
+          <img
+            src={
+              descImgArr.find(
+                ({ originalName }) => originalName === "kay-desc.png"
+              ).originalImg
+            }
+          />
         </div>
       )
     }
     if (author === AUTHORS[3]) {
       return (
         <div className="author-thumbnail">
-          <Link to={`/tags/robbie`}>
-            <img
-              src={
-                descImgArr.find(
-                  ({ originalName }) => originalName === "robbie-desc.png"
-                ).originalImg
-              }
-            />
-          </Link>
+          <img
+            src={
+              descImgArr.find(
+                ({ originalName }) => originalName === "robbie-desc.png"
+              ).originalImg
+            }
+          />
         </div>
       )
     }
@@ -204,10 +196,12 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
   return (
     <>
       {isSmall ? (
-        <div className="author-description-wrapper-small">
-          <AuthorCharacter author={tag} />
-          <span className="author-name">{new String(tag).toUpperCase()}</span>
-        </div>
+        <Link to={`/tags/${new String(tag).toLocaleLowerCase()}`}>
+          <div className="author-description-wrapper-small">
+            <AuthorCharacter author={tag} />
+            <span className="author-name">{new String(tag).toUpperCase()}</span>
+          </div>
+        </Link>
       ) : (
         <div
           className="author-description-wrapper"
