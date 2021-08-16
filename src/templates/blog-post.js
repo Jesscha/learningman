@@ -24,9 +24,10 @@ class BlogPostTemplate extends React.Component {
     const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
     // const ogImagePath = ogimage
 
+    const tama = "/Tamagotchi-Proj-Miid/"
     const disqusConfig = {
       url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
-      identifier: post.id,
+      identifier: post.fields.slug == tama ? post.fields.slug : post.id, // save tamagotchi comments.
       title: post.frontmatter.title,
     }
     console.log("config", disqusConfig)
