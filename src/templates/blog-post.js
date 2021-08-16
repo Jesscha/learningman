@@ -25,7 +25,7 @@ class BlogPostTemplate extends React.Component {
     // const ogImagePath = ogimage
 
     const disqusConfig = {
-      url: `${this.props.data.site.siteMetadata.siteUrl}`,
+      url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
       identifier: post.fields.slug,
       title: post.frontmatter.title,
     }
