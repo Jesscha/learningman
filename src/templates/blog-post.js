@@ -6,7 +6,9 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import "./post.css"
 import { kebabCase } from "lodash"
+import AuthorDescription from "../components/authorDescription"
 
+// 함수 컴포넌트로 바꾸자
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0)
@@ -22,10 +24,31 @@ class BlogPostTemplate extends React.Component {
     const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
     // const ogImagePath = ogimage
 
+    const tama = "/Tamagotchi-Proj-Miid/"
     const disqusConfig = {
       url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
-      identifier: post.fields.slug,
+      identifier: post.fields.slug == tama ? post.fields.slug : post.id, // save tamagotchi comments.
       title: post.frontmatter.title,
+    }
+    console.log("config", disqusConfig)
+
+    // 저자를 발라내자
+    const author = () => {
+      const tags = this.props.data.markdownRemark.frontmatter.tags
+      if (tags.find(tag => tag === "eddy")) {
+        return "eddy"
+      }
+      if (tags.find(tag => tag === "jesse")) {
+        return "jesse"
+      }
+      if (tags.find(tag => tag === "kay")) {
+        return "kay"
+      }
+      if (tags.find(tag => tag === "robbie")) {
+        return "robbie"
+      }
+
+      return
     }
 
     return (
@@ -35,7 +58,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           image={ogImagePath}
         />
-        <div
+        {/* <div
           style={{
             marginBottom: rhythm(0),
             backgroundColor: `#f9f9f9`,
@@ -58,7 +81,7 @@ class BlogPostTemplate extends React.Component {
             </strong>
             )
           </i>
-        </div>
+        </div> */}
         <article>
           <header>
             <h1
@@ -69,7 +92,6 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.title}
             </h1>
-
             <p
               style={{
                 ...scale(-1 / 5),
@@ -79,12 +101,21 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
+            <AuthorDescription tag={author()} isSmall={true} />
+            {/* 작은놈용 컴포넌트를 하나 새로 만들까?  */}
           </header>
           <section
             className="blog-post"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          {post.frontmatter.tags ? (
+          <AuthorDescription tag={author()} isBorderTop={true} />
+          <>
+            <h1>{post.title}</h1>
+            <CommentCount config={disqusConfig} placeholder={''} />
+            <Disqus config={disqusConfig} />
+          </>
+
+          {/* {post.frontmatter.tags ? (
             <div
               style={{
                 marginBottom: rhythm(1),
@@ -103,7 +134,7 @@ class BlogPostTemplate extends React.Component {
                     style={{
                       textDecoration: "none",
                       display: `inline`,
-                      paddingLeft: rhythm(1),
+                      paddingLeft: "8px",
                     }}
                   >
                     <Link
@@ -116,7 +147,7 @@ class BlogPostTemplate extends React.Component {
                 ))}
               </ul>
             </div>
-          ) : null}
+          ) : null} */}
           <hr
             style={{
               marginBottom: rhythm(1),

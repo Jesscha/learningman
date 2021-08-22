@@ -16,10 +16,10 @@ import "./bio.css"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/gatsby-icon.png/" }) {
+      avatar: file(absolutePath: { regex: "/avatar_with_line-desc.png/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
+          fixed {
+            src
           }
         }
       }
@@ -34,15 +34,15 @@ const Bio = () => {
     }
   `)
 
-  const { author } = data.site.siteMetadata
+  const avatarUrl = data.avatar.childImageSharp.fixed.src
   return (
     <div
       style={{
         // display: `flex`,
         marginBottom: rhythm(0),
-        backgroundColor: `#f9f9f9`,
+        // backgroundColor: `#f9f9f9`,
         borderRadius: `5px`,
-        padding: `15px`,
+        // padding: `15px`,
         marginBottom: `15px`,
         marginTop: `15px`,
       }}
@@ -50,18 +50,23 @@ const Bio = () => {
       <div
         style={{
           display: `flex`,
+          alignItems: "center",
+          justifyContent: "flex-start",
         }}
       >
-        <div className="image image-hidden">
-          <Image
-            fixed={data.avatar.childImageSharp.fixed}
-            alt={author}
+        <div
+          className="image image-hidden"
+          style={{
+            marginRight: 16,
+          }}
+        >
+          <img
+            src={avatarUrl}
             style={{
-              marginRight: rhythm(1 / 2),
+              width: 160,
+              minWidth: "160px",
               marginBottom: 0,
-              marginTop: 15,
-              marginBottom: 15,
-              minWidth: 50,
+              // backgroundColor: `#f9f9f9`,
             }}
           />
         </div>
@@ -70,19 +75,29 @@ const Bio = () => {
           style={{
             fontSize: 16,
             marginBottom: 0,
+            marginLeft: 20,
+            height: 130,
+            display: "flex",
+            alignItems: "center",
+            verticalAlign: "center",
+            backgroundColor: `#f9f9f9`,
+            padding: 16,
+            marginLeft: 0,
           }}
         >
-          러닝맨은 당신의 배움과 성장을 도와줄 미디어입니다. 배우는 인간 4명(
-          <Link to={"/tags/eddy"}> Eddy</Link>,
-          <Link to={"/tags/jesse"}> Jesse</Link>,
-          <Link to={"/tags/kay"}> Kay </Link>,
-          <Link to={"/tags/robbie"}> Robbie </Link>
-          )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접 경험한
-          생각만 담습니다. 멋있는 척 하지 않습니다.
+          <div>
+            러닝맨은 당신의 배움과 성장을 도와줄 미디어입니다. 배우는 인간 4명(
+            <Link to={"/tags/eddy"}>Eddy</Link>,
+            <Link to={"/tags/jesse"}> Jesse</Link>,
+            <Link to={"/tags/kay"}> Kay</Link>,
+            <Link to={"/tags/robbie"}> Robbie</Link>
+            )의 성장 프로젝트이기도 합니다. 각자 격주로 글을 올립니다. 직접
+            경험한 생각만 담습니다. 멋있는 척 하지 않습니다. <Link to={"https://astounding-author-8208.ck.page/d6b205043b"}>[러닝맨 구독하기]</Link>
+          </div>
         </p>
       </div>
-      <hr style={{ margin: "8px" }}></hr>
-      <div
+      {/* <hr style={{ margin: "8px" }}></hr> */}
+      {/* <div
         style={{
           fontSize: "16px",
           color: "",
@@ -100,7 +115,7 @@ const Bio = () => {
           </strong>
           )
         </i>
-      </div>
+      </div> */}
     </div>
   )
 }

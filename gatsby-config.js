@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-adsense`,
     },
@@ -176,6 +177,12 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `learningman`
+      }
     },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality

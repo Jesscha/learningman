@@ -7,8 +7,9 @@ import './nav.css';
 
 const Nav = ({tag, location}) => {
     const [move, setMove] = useState(false);
-    let current
+    let current;
     const navRef = useRef(null)
+    
 
     const scrollToNav = (ref) => {
         ref && ref.current && window.scrollTo({
@@ -19,25 +20,19 @@ const Nav = ({tag, location}) => {
         }
 
     useEffect(()=>{
-        current = document.getElementById(tag) 
-        const changeFirstCategory  = ()=>{
-            document.getElementById('all').innerText = tag
-            document.getElementById('all').parentElement.classList.add('navBox-active')
-        }
-        const changeFirstCategoryToAll = () =>{
-            document.getElementById('all').parentElement.classList.add('navBox-active')
-        }
-        current?
-        current.parentElement.classList.add('navBox-active') : 
-        location && location.pathname === "/" ?
-        changeFirstCategoryToAll()
-        :
-        changeFirstCategory()
-
+        current = document.getElementById(`nav-${tag}`) 
+        // const changeFirstCategory  = ()=>{
+        //     document.getElementById('all').innerText = tag
+        //     document.getElementById('all').parentElement.classList.add('navBox-active')
+        // }
+        // const changeFirstCategoryToAll = () =>{
+        //     document.getElementById('all')?parentElement.classList.add('navBox-active')
+        // }
+        current && current.parentElement.classList.add('navBox-active')
         const navWrapper = document.querySelector('.navWrapper')
-        const navPosition = navWrapper.offsetTop
-
-    },[]
+        // const navPosition = navWrapper.offsetTop
+        
+    },[tag]
     )
     
 
@@ -49,11 +44,26 @@ const Nav = ({tag, location}) => {
     }}>
 <div className='navWrapper' ref={navRef}>
     <div className="navBox" >
-        <Link id={"all"} to={'/'} >
-                All
+        <Link id={"nav-eddy"} to={'/tags/eddy'} >
+                Eddy
         </Link>
     </div>
-
+    <div className="navBox" >
+        <Link id={"nav-jesse"} to={'/tags/jesse'} >
+                Jesse
+        </Link>
+    </div>
+    <div className="navBox" >
+        <Link id={"nav-kay"} to={'/tags/kay'} >
+                Kay
+        </Link>
+    </div>
+    <div className="navBox" >
+        <Link id={"nav-robbie"} to={'/tags/robbie'} >
+                Robbie
+        </Link>
+    </div>
+{/* ~
     <div className="navBox" >
          <Link id={'essay'} to={'tags/essay'}>
                 Essay
@@ -61,7 +71,7 @@ const Nav = ({tag, location}) => {
     </div>
     <div className="navBox">
         <Link id={'challenge'} to={'tags/challenge'}>Challenge</Link>
-    </div>
+    </div> */}
     <div className="navBox navBox-end">
          1
     </div>

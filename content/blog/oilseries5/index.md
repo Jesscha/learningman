@@ -45,3 +45,5 @@ Standard Oil은 미국의 각 주별 법령의 특수성으로 인해 다양한 
 하지만 처칠의 이러한 결정에는 아주 큰 문제가 있었다. 당시의 영국은 **석유가 없었다**는 것.
 
 (To be continued)
+
+다음 [글](https://www.learningman.co/oilseries6/) 보기

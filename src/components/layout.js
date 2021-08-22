@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Bio from "./bio"
 import Nav from "./nav"
+import AuthorDescription from "./authorDescription"
 
 class Layout extends React.Component {
   render() {
@@ -20,18 +21,21 @@ class Layout extends React.Component {
               ...scale(1.8),
               marginBottom: 0,
               marginTop: 0,
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              window.location.href = "/"
             }}
           >
-            <Link
+            <span
               style={{
                 boxShadow: `none`,
                 textDecoration: `none`,
                 color: `inherit`,
               }}
-              to={`/`}
             >
               {title}
-            </Link>
+            </span>
           </h1>
           <p
             style={{
@@ -44,6 +48,7 @@ class Layout extends React.Component {
           </p>
           <Bio />
           <Nav tag={tag} location={location} />
+          <AuthorDescription tag={tag} isBorderBottom={true} />
         </>
       )
     } else {

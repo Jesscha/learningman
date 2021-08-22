@@ -53,3 +53,5 @@ tags: ["essay", "oil_series", "kay"]
 (To be continued)
 
 (이번 글의 많은 부분은 최지웅님의 책 '[석유는 어떻게 세계를 지배하는가](http://m.yes24.com/goods/detail/77668684)'을 참고하여 작성되었습니다.)
+
+다음 [글](https://www.learningman.co/oilseries7/) 보기
