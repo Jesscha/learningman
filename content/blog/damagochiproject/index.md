@@ -1,7 +1,7 @@
 ---
 title: 서로가 서로의 목표 달성을 도와준다면?
 date: "2021-08-22T06:40:32.169Z"
-desc-smallription: 자기계발에서 우리계발로
+description: 자기계발에서 우리계발로
 ogimage: './collabo.png'
 tags: ["essay", "challenge","eddy"]
 ---
