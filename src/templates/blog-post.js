@@ -1,5 +1,4 @@
 import React from "react"
-import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,13 +24,6 @@ class BlogPostTemplate extends React.Component {
     // const ogImagePath = ogimage
 
     const tama = "/Tamagotchi-Proj-Miid/"
-    const disqusConfig = {
-      url: `${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}`,
-      identifier: post.fields.slug == tama ? post.fields.slug : post.id, // save tamagotchi comments.
-      title: post.frontmatter.title,
-    }
-    console.log("config", disqusConfig)
-
     // 저자를 발라내자
     const author = () => {
       const tags = this.props.data.markdownRemark.frontmatter.tags
@@ -109,11 +101,6 @@ class BlogPostTemplate extends React.Component {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <AuthorDescription tag={author()} isBorderTop={true} />
-          <>
-            <h1>{post.title}</h1>
-            <CommentCount config={disqusConfig} placeholder={''} />
-            <Disqus config={disqusConfig} />
-          </>
 
           {/* {post.frontmatter.tags ? (
             <div
