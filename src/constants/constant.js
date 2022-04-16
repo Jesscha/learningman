@@ -1,1 +1,2 @@
-export const AUTHORS = ['eddy', 'jesse', 'kay', 'robbie']
+export const AUTHORS = ['eddy', 'jesse', 'kay', 'robbie', 'park'];
+

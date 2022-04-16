@@ -39,6 +39,9 @@ class BlogPostTemplate extends React.Component {
       if (tags.find(tag => tag === "robbie")) {
         return "robbie"
       }
+      if (tags.find(tag => tag === "park")) {
+        return "park"
+      }
 
       return
     }

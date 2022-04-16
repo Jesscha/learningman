@@ -87,6 +87,19 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
         </div>
       )
     }
+    if (author === AUTHORS[4]) {
+      return (
+        <div className="author-thumbnail">
+          <img
+            src={
+              descImgArr.find(
+                ({ originalName }) => originalName === "park-desc.png"
+              ).originalImg
+            }
+          />
+        </div>
+      )
+    }
     return <></>
   }
 
@@ -142,6 +155,19 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
           이름과 같습니다. 은하영웅 전설의 양 웬리처럼 전쟁을 누구보다 잘아는
           전략가이지만 사실은 전쟁을 싫어하는 그런 사람이 되고 싶습니다. 사람을
           잘 관찰하고 싶습니다.
+          <div className="author-link-wrapper">
+            <AuthorLink
+              link="https://www.facebook.com/robbieinertia"
+              linkLogoType="fb"
+            />
+          </div>
+        </div>
+      )
+    }
+    if (author === AUTHORS[4]) {
+      return (
+        <div className="author-desc">
+          인생의 여러가지 문제 푸는걸 좋아합니다. 어떤 문제든지 풀어낼 수 있는 방법은 있다고 생각합니다. 최근의 문제 풀이 도구는 개발과 크립토입니다. 머릿속의 생각을 글로 나눌때 행복을 느낍니다.
           <div className="author-link-wrapper">
             <AuthorLink
               link="https://www.facebook.com/robbieinertia"

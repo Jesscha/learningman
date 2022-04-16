@@ -63,6 +63,11 @@ const Nav = ({tag, location}) => {
                 Robbie
         </Link>
     </div>
+    <div className="navBox" >
+        <Link id={"nav-park"} to={'/tags/park'} >
+                Park
+        </Link>
+    </div>
 {/* ~
     <div className="navBox" >
          <Link id={'essay'} to={'tags/essay'}>
