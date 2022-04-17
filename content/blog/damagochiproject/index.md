@@ -3,7 +3,7 @@ title: 서로가 서로의 목표 달성을 도와준다면?
 date: "2021-08-22T06:40:32.169Z"
 description: 자기계발에서 우리계발로
 ogimage: "./collabo.png"
-tags: ["essay", "challenge", "eddy", "park"]
+tags: ["essay", "challenge", "eddy", "aiden"]
 ---
 
 오늘 포스팅은 러닝맨 자체에 대한 이야기다.

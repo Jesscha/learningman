@@ -93,7 +93,7 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
           <img
             src={
               descImgArr.find(
-                ({ originalName }) => originalName === "park-desc.png"
+                ({ originalName }) => originalName === "aiden-desc.png"
               ).originalImg
             }
           />
@@ -169,10 +169,10 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
         <div className="author-desc">
           인생의 여러가지 문제 푸는걸 좋아합니다. 어떤 문제든지 풀어낼 수 있는 방법은 있다고 생각합니다. 최근의 문제 풀이 도구는 개발과 크립토입니다. 머릿속의 생각을 글로 나눌때 행복을 느낍니다.
           <div className="author-link-wrapper">
-            <AuthorLink
+            {/* <AuthorLink
               link="https://www.facebook.com/robbieinertia"
               linkLogoType="fb"
-            />
+            /> */}
           </div>
         </div>
       )

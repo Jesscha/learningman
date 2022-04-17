@@ -64,8 +64,8 @@ const Nav = ({tag, location}) => {
         </Link>
     </div>
     <div className="navBox" >
-        <Link id={"nav-park"} to={'/tags/park'} >
-                Park
+        <Link id={"nav-aiden"} to={'/tags/aiden'} >
+                aiden
         </Link>
     </div>
 {/* ~
