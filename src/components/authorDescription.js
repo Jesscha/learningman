@@ -126,12 +126,6 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
           달인입니다. 차분한 마음으로 꾸준히 하면 어디서든 두각을 드러낼 수
           있다고 믿습니다. 개발 실력, 마음의 자유에 관심이 많습니다. 애쓰지
           않으면서도 열심히 사는 삶을 추구합니다.
-          <div className="author-link-wrapper">
-            <AuthorLink
-              link="https://www.facebook.com/cha.jesse"
-              linkLogoType="fb"
-            />
-          </div>
         </div>
       )
     }
