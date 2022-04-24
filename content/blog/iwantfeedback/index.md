@@ -1,9 +1,9 @@
 ---
-title: 넘어진 김에 돌맹이라도 주워 일어나 보자
+title: 피드백? 필요하다면 내가 만들겠어
 date: "2022-04-24T06:40:32.169Z"
-description: 알고리즘 첼린지 실패담
+description: 
 ogimage: './thumbnail.png'
-tags: ["essay", "challenge","jesse"]
+tags: ["essay","jesse"]
 ---
 
 ![](./thumbnail.png)
