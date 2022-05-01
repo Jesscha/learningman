@@ -6,7 +6,7 @@ ogimage: './2021.jpg'
 tags: ["kyle"]
 ---
 
-![./thumbnail.jpg](./thumbnail.jpg)
+![./thumbnail.png](./thumbnail.png)
 
 마크다운문법 
 
@@ -14,5 +14,5 @@ tags: ["kyle"]
 ## 이건 다음 큰 글씨 
 ### 이건 그다음.. 이제 알겠지
 
-~~기울기~~ 
+~~취소선~~ 
 
