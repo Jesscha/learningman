@@ -8,7 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const tagTemplate = path.resolve(`src/templates/tags.js`)
-  const AUTHORS = ["eddy", "jesse", "kay", "robbie", "aiden"]
+  const AUTHORS = ["eddy", "jesse", "kay", "robbie", "aiden", "kyle"]
   AUTHORS.forEach(async author => {
     const result = await graphql(
       `

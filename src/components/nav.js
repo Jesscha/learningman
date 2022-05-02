@@ -68,6 +68,11 @@ const Nav = ({tag, location}) => {
                 Aiden
         </Link>
     </div>
+     <div className="navBox" >
+        <Link id={"nav-kyle"} to={'/tags/kyle'} >
+                Kyle
+        </Link>
+    </div>
 {/* ~
     <div className="navBox" >
          <Link id={'essay'} to={'tags/essay'}>
