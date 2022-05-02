@@ -1,8 +1,8 @@
 ---
 title: 성장통
-date: "2022-05-01T23:22:02.169Z"
-description: 성장통
-ogimage: './thumbnail.jpg'
+date: "2022-05-01T10:30:00.000Z"
+description: 러닝맨과 성장통
+ogimage: './2021.jpg'
   tags: ["kyle"]
 ---
 
