@@ -3,7 +3,7 @@ title: 성장통
 date: "2022-05-01T23:22:02.169Z"
 description: 성장통
 ogimage: './thumbnail.jpg'
-tags: ["Kyle"]
+  tags: ["kyle"]
 ---
 
 
