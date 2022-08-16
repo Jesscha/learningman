@@ -120,7 +120,7 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[0]) {
       return (
         <div className="author-desc">
-          스타트업, VC, 창업, 기자를 거쳐 PD로 일하고 있습니다. 글을 잘 쓰고
+          스타트업, VC, 창업, 기자, PD를 거쳐 개발자로 일하고 있습니다. 글을 잘 쓰고
           싶어서 매일 씁니다. 더 자라기 위한 고민을 많이 합니다. 배우는 걸
           좋아해서 러닝맨을 시작했습니다.
           <div className="author-link-wrapper">
