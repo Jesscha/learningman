@@ -145,8 +145,8 @@ const AuthorDescription = ({ tag, isSmall, isBorderTop, isBorderBottom }) => {
     if (author === AUTHORS[2]) {
       return (
         <div className="author-desc">
-          스타트업과 컨설팅을 거쳐 현재 정유사에서 해외영업을 담당하고 있습니다.
-          IT 산업과 에너지 산업, 블록체인 및 기술 기반 프로덕트에 관심이
+          스타트업과 컨설팅, 정유사를 거쳐 현재 Web3 스타트업을 창업했습니다.
+          IT 산업, 에너지 산업, 블록체인 및 기술 기반 프로덕트에 관심이
           많습니다. 어릴 적부터 꿈은 대통령이지만 대통령이 되지 않아도 행복할 수
           있는 사람으로 성장하려고 노력합니다.
           <div className="author-link-wrapper">
